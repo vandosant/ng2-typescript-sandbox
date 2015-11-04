@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title></title>
-    <script src="https://code.angularjs.org/tools/system.js"></script>
-    <script src="https://code.angularjs.org/tools/typescript.js"></script>
-    <script src="https://code.angularjs.org/2.0.0-alpha.44/angular2.dev.js"></script>
-    <script>
-      System.config({
-        transpiler: 'typescript',
-        typescriptOptions: { emitDecoratorMetadata: true }
-      });
-      System.import('./app.ts');
-    </script>
+  <meta charset="UTF-8">
+  <title></title>
+  <script src="../node_modules/systemjs/dist/system.src.js"></script>
+  <script src="../node_modules/angular2/bundles/angular2.dev.js"></script>
+  <script src="https://code.angularjs.org/tools/typescript.js"></script>
+  <script>
+    System.config({
+      transpiler: 'typescript',
+      typescriptOptions: { emitDecoratorMetadata: true }
+    });
+    System.import('./src/app.ts');
+  </script>
 </head>
 <body>
   <app></app>
